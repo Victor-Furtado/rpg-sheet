@@ -1,0 +1,62 @@
+module.exports = {
+  mode: 'jit',
+  purge: [
+    "./assets/**/*.{css}",
+    "./components/*.{vue,js}",
+    "./components/**/*.{vue,js}",
+    "./pages/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./*.{vue,js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          '50': '#e4f8e4',
+          '100': '#c1edc2',
+          '200': '#9de3a0',
+          '300': '#7ad87d',
+          '400': '#56ce5b',
+          '500': '#33c339',
+          '600': '#2aa02f',
+          '700': '#217c25',
+          '800': '#17591a',
+          '900': '#0e3510',
+        },
+        secondary: {
+          '50': '#e4edf8',
+          '100': '#c1d5ed',
+          '200': '#9dbde3',
+          '300': '#7aa5d8',
+          '400': '#568dce',
+          '500': '#3375c3',
+          '600': '#2a60a0',
+          '700': '#214b7c',
+          '800': '#173559',
+          '900': '#0e2035',
+        },
+        highlight: {
+          '50': '#f8e4f7',
+          '100': '#edc1eb',
+          '200': '#e39de0',
+          '300': '#d87ad4',
+          '400': '#ce56c9',
+          '500': '#c333bd',
+          '600': '#a02a9b',
+          '700': '#7c2179',
+          '800': '#591756',
+          '900': '#350e34',
+        },
+        text: '#424242',
+        title: '#292922',
+      },
+      fontFamily: {
+        'title': ['Exo 2', 'sans-serif'],
+        'text': ['Alegreya Sans', 'sans-serif'],
+      }
+    },
+  },
+  plugins: [],
+}
