@@ -97,13 +97,6 @@ main {
     @apply h-full;
 }
 
-main .paper {
-    @apply bg-white;
-    @apply min-w-full;
-    @apply py-5;
-    @apply px-16;
-}
-
 header {
     @apply border-b border-primary-500;
 }

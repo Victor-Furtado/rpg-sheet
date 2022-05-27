@@ -1,5 +1,5 @@
 <template>
-<div class="container flex flex-col items-center justify-center gap-3">
+<div class="paper container flex flex-col items-center justify-center gap-3">
     <h3>Olá!</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum purus tincidunt, dictum enim ut, vehicula nisi. Curabitur vehicula laoreet congue. Suspendisse non lobortis eros. Maecenas velit sapien, bibendum quis risus at, tincidunt feugiat lacus. Etiam eu elementum velit. Donec eleifend porta lorem, sit amet elementum felis euismod ut. Mauris consequat, tortor ut ornare euismod, odio diam finibus augue, quis auctor neque arcu vel nisi. Ut luctus nisi vitae velit faucibus gravida. Nam leo erat, faucibus nec facilisis sit amet, fermentum a ex. Vivamus congue sodales magna ac volutpat. Sed consectetur gravida erat, nec elementum enim facilisis quis. Fusce molestie ultrices rutrum. Nullam at efficitur turpis. Quisque vulputate finibus lacus vel ultricies. Cras at eros fermentum neque euismod pulvinar. Ut at semper dui, quis pharetra mauris.</p>
     <hr>
