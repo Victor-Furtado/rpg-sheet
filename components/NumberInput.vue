@@ -1,3 +1,28 @@
+<script setup lang="ts">
+interface NumberInputProps {
+  modelValue?: number;
+  clamp: boolean;
+}
+
+const props = defineProps<NumberInputProps>();
+
+const emit = defineEmits(['update:modelValue']);
+
+onUpdated(() => {
+  if (props.clamp && props.modelValue < 0) emit('update:modelValue', 0);
+});
+
+const isNumber = (e) => {
+  e = e ? e : window.event;
+  var charCode = e.which ? e.which : e.keyCode;
+  if (charCode < 48 || charCode > 57) {
+    e.preventDefault();
+  } else {
+    return true;
+  }
+};
+</script>
+
 <template>
   <div class="inline-flex items-center">
     <button
@@ -20,29 +45,6 @@
     </button>
   </div>
 </template>
-
-<script lang="ts">
-export default {
-  props: {
-    modelValue: 0,
-    clamp: false,
-  },
-  updated() {
-    if(this.clamp && this.modelValue < 0) this.$emit('update:modelValue', 0)  
-  },
-  methods: {
-    isNumber: (e) => {
-      e = e ? e : window.event;
-      var charCode = e.which ? e.which : e.keyCode;
-      if (charCode < 48 || charCode > 57) {
-        e.preventDefault();
-      } else {
-        return true;
-      }
-    },
-  },
-};
-</script>
 
 <style scoped>
 input[type='number'] {

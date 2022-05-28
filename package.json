@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "pnpm pre-dev && nuxt dev",
+    "pre-dev": "pnpm install --shamefully-hoist",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
