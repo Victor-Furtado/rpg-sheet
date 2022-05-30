@@ -1,10 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const {componentList} = useOverlay();
+</script>
 
 <template>
   <div
-    class="fixed inset-0 z-50 flex items-center justify-center text-white backdrop-blur bg-black/50"
+    class="fixed inset-0 z-50 flex items-center justify-center backdrop-blur bg-black/50"
   >
-    {overlay}
+    <component :is="componentList[componentList.length-1]"></component>
   </div>
 </template>
 

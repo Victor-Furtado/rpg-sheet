@@ -1,14 +1,17 @@
+<script setup lang="ts">
+const { open } = useOverlay();
+</script>
+
 <template>
   <NuxtLayout name="default">
     <NuxtPage />
-    <Overlay />
+    <Overlay v-show="open" />
   </NuxtLayout>
 </template>
 
 <style>
 @tailwind base;
 @tailwind components;
-
 @layer components {
   body {
     @apply text-text;
