@@ -3,6 +3,8 @@ import { talents } from '@/data.json';
 interface ISheet {
   talents: { [name: string]: number };
   verbs: { [name: string]: boolean };
+  bequests: Array<string>;
+  accomplishments: Array<string>;
 }
 
 const useSheet = () => {
@@ -27,6 +29,8 @@ const useSheet = () => {
       }),
       {}
     ),
+    bequests: [],
+    accomplishments: [],
   });
 
   return { sheet };

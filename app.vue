@@ -1,11 +1,8 @@
-<script setup lang="ts">
-const { open } = useOverlay();
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <NuxtLayout name="default">
     <NuxtPage />
-    <Overlay v-show="open" />
   </NuxtLayout>
 </template>
 
@@ -63,7 +60,8 @@ const { open } = useOverlay();
 @layer utilities {
   .paper {
     @apply bg-white;
-    @apply min-w-full;
+    @apply w-full;
+    @apply max-w-7xl;
     @apply py-5;
     @apply px-16;
   }

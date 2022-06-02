@@ -93,7 +93,9 @@ footer {
 main {
     @apply flex;
     @apply justify-center;
-    @apply mx-96;
+    @apply 2xl:mx-96;
+    @apply xl:mx-48;
+    @apply sm:mx-32;
     @apply h-full;
 }
 
