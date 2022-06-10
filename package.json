@@ -10,8 +10,5 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.0-4",
     "nuxt": "3.0.0-rc.3"
-  },
-  "dependencies": {
-    "click-outside-vue3": "^4.0.1"
   }
 }

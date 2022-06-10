@@ -46,7 +46,7 @@ const selected = ref(0);
     </ul>
     <div class="w-full h-96 shadow-inner px-2 py-3">
         <h2 class="font-bold">{{list[selected].name}}</h2>
-        <p>{{list[selected].desc}}</p>
+        <p v-for="text in list[selected].desc.split('\n')">{{text}}</p>
     </div>
 </div>
 </template>

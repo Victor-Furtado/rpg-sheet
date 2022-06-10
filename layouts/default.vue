@@ -28,10 +28,10 @@ export default {
                     title: "Ficha de Jogo",
                     path: '/sheet',
                 },
-                {
-                    title: "Regras",
-                    path: '/rules',
-                }
+                // {
+                //     title: "Regras",
+                //     path: '/rules',
+                // }
             ]
         }
     }
@@ -40,7 +40,6 @@ export default {
 
 <style scoped>
 .app {
-    @apply h-screen;
     @apply flex;
     @apply flex-col;
 }
@@ -87,7 +86,6 @@ footer {
     @apply text-white;
     @apply uppercase;
     @apply text-center;
-    @apply z-20;
 }
 
 main {
@@ -105,7 +103,6 @@ header {
 
 footer {
     @apply border-t border-primary-500;
-    @apply mt-auto;
     @apply h-12;
 }
 
